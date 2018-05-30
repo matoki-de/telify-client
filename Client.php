@@ -57,7 +57,7 @@ class Client
     public function call(string $destination, string $campaign)
     {
         $response = $this->sendRequest('call', [$campaign, $destination]);
-        return (int)$response['callId'];
+        return (int)$response['id'];
     }
 
     /**
