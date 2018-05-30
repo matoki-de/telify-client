@@ -1,0 +1,22 @@
+{
+  "name": "matoki/telify-client",
+  "description": "A PSR-4 compliant PHP class for using the Telify Closed-Loop Telephone Number Verification service.",
+  "homepage": "https://www.bequadrat.de/systeme-loesungen/telify-telefonverifizierung.html",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christian Schätzlein",
+      "email": "c.schaetzlein@matoki.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "ext-soap": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Matoki\\Telify\\": ""
+    }
+  }
+}
