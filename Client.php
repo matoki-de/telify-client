@@ -65,11 +65,11 @@ class Client
      * given code.
      *
      * @param int $callId
-     * @param int $code
+     * @param string $code
      * @throws Exception
      * @return boolean
      */
-    public function verify(int $callId, int $code)
+    public function verify(int $callId, string $code)
     {
         $response = $this->sendRequest('verify', [$callId, $code]);
         return (bool)$response['result'];
